@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
+import 'antd/dist/reset.css';
+import { Button } from 'antd';
 function Main() {
     return (
         <div>
             <h1>Hello, world!</h1>
+            <div>
+                <Button type="primary">Hello Antd</Button>
+            </div>
         </div>
     );
 }

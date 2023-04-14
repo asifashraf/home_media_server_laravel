@@ -10,9 +10,18 @@ class DirController extends Controller
     /**
      * Display a listing of the resource.
      */
+    // An array of directories to list
+    protected $directories = [
+
+        'D:/tut/',
+        'D:/torrent/',
+        'D:/media/'
+    ];
+
+    // List the directories
     public function index()
     {
-        return "api/dirs";
+        return response()->json($this->directories);
     }
 
     /**

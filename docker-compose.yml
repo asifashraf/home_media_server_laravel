@@ -6,7 +6,7 @@ services:
     ports:
       - "8011:8000"
     volumes:
-      - './media_server:/app'
+      - '.:/app'
     depends_on:
       - mysql
     networks:

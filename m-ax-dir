@@ -1,12 +1,11 @@
 #!/bin/sh
-m-cd
 if [ -d "$1" ]; then
   cd "$1"
   echo Enter into $1
   for file in *; do
     if [ -f "$file" ]; then
       # if file name starts with character - 
-        if [[ $file == -* ]]; then
+        if [[ $file == m-* ]]; then
             chmod a+x "./$file"
             echo changed permissions of "./$file"
         fi

@@ -13,6 +13,7 @@ php artisan db
 ###### run this to find the client
 apt show default-mysql-client
 ###### then install client 
+apt-get update
 apt install default-mysql-client
 ###### once you are connected then do : show tables 
 
@@ -54,3 +55,25 @@ No security vulnerability advisories found
 Using version ^3.6 for doctrine/dbal
 
 ```
+
+
+## Styles that work 
+
+### Buttons
+
+```jsx
+<Button type="primary" ghost>
+    Primary
+</Button>
+<Button ghost>Default</Button>
+
+<Button type="primary" danger ghost>
+    Danger
+</Button>
+```
+
+
+## For role based security install
+
+https://spatie.be/docs/laravel-permission/v5/basic-usage/basic-usage
+

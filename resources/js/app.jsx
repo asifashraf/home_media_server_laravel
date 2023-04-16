@@ -1,3 +1,4 @@
+import 'antd/dist/reset.css';
 import './bootstrap';
 import '../css/app.css';
 

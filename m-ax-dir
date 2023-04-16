@@ -1,5 +1,5 @@
 #!/bin/sh
-cd /Users/asif/git-gh/misc/home_media_server_laravel
+m-cd
 if [ -d "$1" ]; then
   cd "$1"
   echo Enter into $1

@@ -1,5 +1,23 @@
 # Readme
 
+## scripts help
+
+Add the export command to the mac's .bash_profile file 
+```bash 
+vim ~/.zshrc # or ~/.bash_profile 
+```
+
+Add your app directory to the PATH variable
+```bash
+export PATH=$PATH:/Users/asif/git-gh/misc/home_media_server_laravel
+``` 
+
+Now all script will execute 
+Any script file that starts with - character is media script. Every application can decide their startup characters. 
+-ax-dir file has a filter that checks that any file that starts with character - will become executable in media server repository. 
+
+Copy the same file to new repositories and change condition to choose the character 
+
 ## install breeze / auth and ui
 
 ```bash

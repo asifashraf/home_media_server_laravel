@@ -9,4 +9,7 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
+    # Create static field type_data that returns 1
+    public static $type_data = 'data';
+
 }

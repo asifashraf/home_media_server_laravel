@@ -1,0 +1,4 @@
+#!/bin/sh 
+source m-cd 
+php artisan make:model $1 --all
+

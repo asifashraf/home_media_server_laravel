@@ -1,0 +1,4 @@
+#!/bin/bash
+# run php artisan feature tests
+source m-cd 
+php artisan test --testsuite=Feature

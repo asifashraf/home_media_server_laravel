@@ -1,0 +1,4 @@
+#!/bin/bash
+source m-cd
+php artisan make:controller $1
+

@@ -12,16 +12,24 @@ Add your app directory to the PATH variable
 export PATH=$PATH:/Users/asif/git-gh/misc/home_media_server_laravel
 ``` 
 
+
 Now all script will execute 
 Any script file that starts with - character is media script. Every application can decide their startup characters. 
 -ax-dir file has a filter that checks that any file that starts with character - will become executable in media server repository. 
 
 Copy the same file to new repositories and change condition to choose the character 
 
+### inside container add directory to ~/.bash_profile
+```bash
+echo "export PATH=/Users/asif/git-gh/misc/home_media_server_laravel:$PATH" >> ~/.bash_profile
+```
+
 ## install breeze / auth and ui
 
 ```bash
 # inside your laravel container 
+apt install vim 
+
 composer require laravel/breeze --dev
 php artisan breeze:install react
 

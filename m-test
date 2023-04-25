@@ -1,4 +1,6 @@
 #!/bin/bash
 # run php artisan feature tests
 source m-cd 
-php artisan test --testsuite=Feature
+#php artisan test --testsuite=Feature
+# run php artisan feature tests from file FolderTest
+php artisan test --testsuite=Feature --filter=FolderTest

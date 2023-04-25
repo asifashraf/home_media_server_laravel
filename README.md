@@ -45,6 +45,7 @@ apt install default-mysql-client
 
 php artisan db:show
 php artisan db:table users
+composer require fakerphp/faker
 
 ```
 
